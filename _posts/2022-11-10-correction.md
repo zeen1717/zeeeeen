@@ -1,9 +1,10 @@
 ---
 comments: true
 layout: post
+description: final exam correction
 title: correction
 toc: true
-permalink: /correction/
+permalink: /correction
 ---
 
 **Final Test Correction**
