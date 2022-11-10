@@ -10,7 +10,7 @@ They are very cute, right?
 
 ![]({{ site.baseurl }}/images/husky.jpg) 
 
-123456789
+
 ![]({{ site.baseurl }}/images/hhusky.png) 
 
 
