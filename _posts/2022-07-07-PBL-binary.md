@@ -72,7 +72,7 @@ tags: [html, liquid, javascript]
 
     // return string with current value of each bit
     function getBits() {
-        let bits = "";
+        let bits = "8";
         for(let i = 0; i < BITS; i++) {
         bits = bits + document.getElementById('digit' + i).value;
         }
