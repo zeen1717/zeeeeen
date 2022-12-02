@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -158,9 +158,9 @@ window.onload = wrap_img;
 <a class="anchor" href="#Notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes<a class="anchor-link" href="#Notes"> </a>
 </h2>
 <ol>
+<li>the symbol for modulus is %   </li>
 <li>An index is a number that represents a position,</li>
 <li>The pseudocode is a program written in common language</li>
-<li>
 </ol>
 
 </div>
@@ -186,8 +186,8 @@ the symbol for addition is <strong>+</strong><br>
 the symbol for subtraction is <strong>-</strong><br>
 the symbol for multiplication is __</em><strong><br>
 the symbol for division is </strong>/<strong><br>
-the symbol for modulus is </strong>%<strong><br>
-an algorithm is _basic</strong></p>
+the symbol for modulus is </strong>%__<br>
+an algorithm is <em>basic</em></p>
 
 </div>
 </div>
@@ -305,10 +305,29 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">decimal</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">decimal</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">:</span>
+        <span class="n">convert</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">decimal</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">decimal</span> <span class="o">%</span> <span class="mi">2</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">''</span><span class="p">)</span>
+        
+<span class="n">decimal</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter a decimal number </span><span class="se">\n</span><span class="s2">"</span><span class="p">))</span>
+<span class="n">convert</span><span class="p">(</span><span class="n">decimal</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1011110</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -331,9 +350,9 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 <a class="anchor" href="#Vocab:-fill-in-the-blanks-using-the-video" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab: fill in the blanks using the video<a class="anchor-link" href="#Vocab:-fill-in-the-blanks-using-the-video"> </a>
 </h3>
 <p>Index is a number representing a position, like a character's position in a string or a string's position in a list.<br>
-Concatenation is <strong>__</strong><br>
-Length is <strong><strong><br>
-A substring is ___</strong></strong></p>
+Concatenation is <strong>the operation of joining two strings together__</strong><br>
+Length is <strong> the count of all its characters except the null character "0"</strong><br>
+A substring is <strong>_<em>a subset or part of another string, or it is a contiguous sequence of characters within a string.</em></strong></p>
 
 </div>
 </div>
@@ -476,13 +495,30 @@ hellobye
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"jaden"</span><span class="p">,</span><span class="s2">"max"</span><span class="p">,</span><span class="s2">"dylan"</span><span class="p">,</span><span class="s2">"orlando"</span><span class="p">]</span>
 
 <span class="k">def</span> <span class="nf">length</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
-    <span class="k">for</span>  <span class="ow">in</span> <span class="p">:</span>
-        <span class="nb">print</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">names</span> <span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">name</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)))</span>
 
 <span class="n">length</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>jaden5
+max3
+dylan5
+orlando7
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
