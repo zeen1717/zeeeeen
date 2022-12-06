@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "U3 S8 and S10",
-            "content": "Notes . For loop repeats a function a certain number of times | The while loop is used to repeat a piece of code a certain number of times until the condition is met. | The while loop is very similar to the if condition, except that while is executed continuously until it is no longer true, while if is executed only once. | List index starts at 0 in the list | append adds an element at the end, remove removes it at the index, and pop removes the last item. | Exercise#1 . Task Reverse a list utilizing features of lists and iteration Hint: Use two parameters with the range function . list = [1, 2, 3, 4, 5] # Print this in reverse order for number in reversed(list) : print(number) . 5 4 3 2 1 . Exercise #2 . Task Similar to insertion sort, this algorithm takes an unsorted array and returns a sorted array Unlike insertion sort where you iterate through the each element and move the smaller elements to the front, this algorithm starts at the beginning and swaps the position of every element in the array . Expected Output: The sorted array from 1-10 . list = [9, 8, 4, 3, 5, 2, 6, 7, 1, 0] # Sort this array using bubble sort numbers = list numbers.sort() print(numbers) . [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] .",
-            "url": "https://zeen1717.github.io/zeeeeen/2022/12/05/U3-S8&10.html",
-            "relUrl": "/2022/12/05/U3-S8&10.html",
+            "title": "U3 S9 and S11",
+            "content": "Notes . If clauses are separated or have one if clause inside another if clause is possible to be different | Boolean values can be expressed in different ways to express the same result | .",
+            "url": "https://zeen1717.github.io/zeeeeen/2022/12/05/U3-S9&11.html",
+            "relUrl": "/2022/12/05/U3-S9&11.html",
             "date": " • Dec 5, 2022"
         }
         
