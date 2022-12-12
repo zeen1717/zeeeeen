@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -137,6 +137,8 @@ window.onload = wrap_img;
 <ul>
 <li>If clauses are separated or have one if clause inside another if clause is possible to be different</li>
 <li>Boolean values can be expressed in different ways to express the same result</li>
+<li>When applied to sorted data, binary search is usually more efficient than sequential/linear search. </li>
+<li>And binary search must sort groups of numbers in ascending or descending order</li>
 </ul>
 
 </div>
@@ -149,25 +151,208 @@ window.onload = wrap_img;
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
 <ol>
-<li>
-<p>Make a binary search tree of different the list [1,2,3,4,6,9,11,69]</p>
-</li>
-<li>
-<p>Explain thorughly how to find the number 69 in the list above (use key words)</p>
-</li>
-<li>
-<p>Make a diagram explaining how you found the list (not tree, include equation)</p>
-</li>
-<li>
-<p>Put this list of strings in a order that can be used for binary search [“store”,”Market”,”Walmart”,Target”,”Ralphs”]</p>
-</li>
-<li>
-<p>Explain why Binary Search is more efficient than Sequential Search</p>
-</li>
-<li>
-<p>[64,36,16,11,9] Explain which number you are finding, how many check it would take, and make a binary search tree</p>
-</li>
+<li>Write this Boolean statement in the form of a conditional (if/else) statement: stayInside⟵((isCold) OR (isRaining))</li>
 </ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="n">isCold</span> <span class="ow">or</span> <span class="n">isRaining</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">stayInside</span> <span class="o">&lt;--</span> <span class="kc">True</span>
+<span class="p">}</span>
+<span class="k">else</span>
+<span class="p">{</span>
+    <span class="n">stayInside</span> <span class="o">&lt;--</span> <span class="kc">False</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Create an algorithm that uses selection and/or iteration that will represent one player’s complete turn.</li>
+</ol>
+<p>During a turn, each player gets 4 attempts/chances to get the greatest number possible.</p>
+<p>During each attempt, the player will use a random number generator to select a random number from 1 to 10.</p>
+<p>After they have had 4 chances, their score is the greatest number they received from the random number generator, and their turn is over.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">attempts</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">score</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">while</span> <span class="n">attempts</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">score</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+    <span class="n">attempts</span> <span class="o">=</span> <span class="n">attempts</span> <span class="o">-</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Final Score:"</span><span class="p">,</span><span class="nb">max</span><span class="p">(</span><span class="n">score</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[2, 8, 2, 2]
+Final Score: 8
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Create an algorithm that will allow the arrow to reach the gray square</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span>
+<span class="k">if</span> <span class="n">IsBlocked</span><span class="p">{</span>
+    <span class="n">TurnRight</span>
+<span class="p">}</span>
+<span class="k">else</span><span class="p">{</span>
+    <span class="n">MoveForward</span>
+<span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Make a binary search tree of different the list [1,2,3,4,6,9,11,69]</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/zeeeeen/images/copied_from_nb/3.jpg" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Explain thorughly how to find the number 69 in the list above (use key words)</li>
+</ol>
+<p>Divide the first index number plus the last index number by two, take the median, if it is not 69, continue and check the left and right indexes, if it is smaller than 69, branch search to the right, and vice versa to the left, repeat the process until it finds 69</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Make a diagram explaining how you found the list (not tree, include equation)</li>
+</ol>
+<p><img src="/zeeeeen/images/copied_from_nb/1.jpg" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Put this list of strings in a order that can be used for binary search [“store”,”Market”,”Walmart”,Target”,”Ralphs”]</li>
+</ol>
+<p>["Market","Ralphs","store","Target","Walmart"]
+Put initial letters in alphabetical order</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Explain why Binary Search is more efficient than Sequential Search</li>
+</ol>
+<p>Because using sequential search, it needs to eliminate one number at a time to find the answer, but if you use binary search, it is constantly half and half to narrow down the range, and then finally determine the number, so binary search is obviously more efficient</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>[64,36,16,11,9] Explain which number you are finding, how many check it would take, and make a binary search tree</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>9, 2 times check</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/zeeeeen/images/copied_from_nb/2.jpg" alt=""></p>
 
 </div>
 </div>
