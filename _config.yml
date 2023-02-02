@@ -38,7 +38,7 @@ baseurl: "/zeeeeen" # the subpath of your site, e.g. "/blog".
 
 # Github and twitter are optional:
 minima:
-  skin: solarized
+  skin: solarized-light
   #  social_links:
   #    twitter: NighthawkCoding
   #    github: nighthawkcoders
