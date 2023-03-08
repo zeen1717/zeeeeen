@@ -7,7 +7,7 @@ toc: true
 
 **Test Correction**
 ## 2
-![](屏幕截图 2023-03-06 122859.png)The Websites visited by users can use cookies to track users and collect relevant information.
+![](/image/屏幕截图 2023-03-06 122859.png)The Websites visited by users can use cookies to track users and collect relevant information.
 
 ## 17
 ![](屏幕截图 2023-03-06 123819.png)The online newspaper identifies the person who created it and it is linked to the physical newspaper, which is considered to be a reliable source of information
