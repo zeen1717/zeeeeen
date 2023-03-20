@@ -254,10 +254,20 @@ integer, varchar, date</p>
 </blockquote>
 <ul>
 <li>What is a connection object?  After you google it, what do you think it does?</li>
+</ul>
+<p>It represents a unique session with the data source, possibly equivalent to an actual network connection to the server</p>
+<ul>
 <li>Same for cursor object?</li>
+</ul>
+<p>The curso object is an iterator over the result set in the query</p>
+<ul>
 <li>Look at conn object and cursor object in VSCode debugger.  What attributes are in the object?</li>
+</ul>
+<p>Name, uid, date of birth and so on.</p>
+<ul>
 <li>Is "results" an object?  How do you know?</li>
 </ul>
+<p>Yes, it is used to test the rest of the data that didn't show completely.</p>
 
 </div>
 </div>
@@ -395,10 +405,17 @@ integer, varchar, date</p>
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>making a new table.</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>"try" allows you to test your code for errors, "except" allows you to handle errors.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>Because it's testing</p>
 
 </div>
 </div>
@@ -464,9 +481,13 @@ integer, varchar, date</p>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
 <li>Is DELETE a dangerous operation?  Why?</li>
-<li>What is the "f" and {uid} do?</li>
 </ul>
 </blockquote>
+<p>It will delete some user from their uid</p>
+<ul>
+<li>What is the "f" and {uid} do?</li>
+</ul>
+<p>uid is user's indentification in the database.</p>
 
 </div>
 </div>
@@ -531,6 +552,7 @@ integer, varchar, date</p>
 <ul>
 <li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
+<p>I guess so.</p>
 
 </div>
 </div>
