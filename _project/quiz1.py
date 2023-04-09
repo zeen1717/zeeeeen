@@ -1,7 +1,9 @@
+# create atrribute fo question
 class Question:
     def __init__(self, prompt):
         self.prompt = prompt
 
+# A list to store the questions about skintype
 questions_prompts = [
     "Does your face look shiny in the photo?\n(a) Never\n(b) Sometimes\n(c) Often\n(d) Always\n\n",
     "Being in a dry environment, if you don't use skin care products, your facial skin?\n(a)Feels normal\n(b)feels tight \n(c)Feels dry or tingly Dry \n(d)Looks shiny or never feels the need to moisturize \n\n  ",
@@ -10,6 +12,7 @@ questions_prompts = [
     "Which one best describes the appearance of your pores?\n(a)Large and clearly visible\n(b)medium size greasy\n(c)Small, not visible unless you pay attention\n(d)Large or medium sized, visible only on forehead and nose\n\n"    
 ]
 
+# use a list to put the list by order while runing
 questions = [
     Question(questions_prompts[0]),
     Question(questions_prompts[1]),
@@ -18,6 +21,9 @@ questions = [
     Question(questions_prompts[4])
 ]
 
+# define how to run this test
+# using "while true" to create a infinite loop if it is not true, it will repeat the current question 
+# using "break" to make this quiz work so that it will go to next quesiton after the user enter the right letter
 def run_test(questions):
     score = 0
     for question in questions: 
