@@ -172,14 +172,13 @@ Transfer-Encoding: chunked
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
 <span class="c1"># Change the URL to whatever you&#39;d like</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://google.com&quot;</span><span class="p">)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;https://www.netflix.com/&quot;</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Status code:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Headers:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Response text:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">[:</span><span class="mi">100</span><span class="p">])</span>
 
 <span class="c1"># Add a line to print the &quot;Content-Type&quot; header of the response</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;content-type&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 <span class="c1"># Try an image URL!</span>
 </pre></div>
 
@@ -194,9 +193,8 @@ Transfer-Encoding: chunked
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Status code: 200
-Headers: {&#39;Date&#39;: &#39;Wed, 26 Apr 2023 21:24:00 GMT&#39;, &#39;Expires&#39;: &#39;-1&#39;, &#39;Cache-Control&#39;: &#39;private, max-age=0&#39;, &#39;Content-Type&#39;: &#39;text/html; charset=ISO-8859-1&#39;, &#39;Content-Security-Policy-Report-Only&#39;: &#34;object-src &#39;none&#39;;base-uri &#39;self&#39;;script-src &#39;nonce-toPdpM5Bmhu8ZZGHn1NdVQ&#39; &#39;strict-dynamic&#39; &#39;report-sample&#39; &#39;unsafe-eval&#39; &#39;unsafe-inline&#39; https: http:;report-uri https://csp.withgoogle.com/csp/gws/other-hp&#34;, &#39;P3P&#39;: &#39;CP=&#34;This is not a P3P policy! See g.co/p3phelp for more info.&#34;&#39;, &#39;Content-Encoding&#39;: &#39;gzip&#39;, &#39;Server&#39;: &#39;gws&#39;, &#39;X-XSS-Protection&#39;: &#39;0&#39;, &#39;X-Frame-Options&#39;: &#39;SAMEORIGIN&#39;, &#39;Set-Cookie&#39;: &#39;1P_JAR=2023-04-26-21; expires=Fri, 26-May-2023 21:24:00 GMT; path=/; domain=.google.com; Secure, AEC=AUEFqZfZYZ-WgsQKJEp-I8pyyOFFXNj905HvmIeKhO7J8n1XHJ3ojXvev4Y; expires=Mon, 23-Oct-2023 21:24:00 GMT; path=/; domain=.google.com; Secure; HttpOnly; SameSite=lax, NID=511=t_IfRisHXvE-8sy_qORXsAIjxHNFWNeashVq1V8qtmENYyFbNU-Lo_f7kiMBDmcvGcNNwCyRg4n_f7R70t5eFNUvzFAqaggR08sQFAtQjoBa1hY7IWkmku8Y-O_bDs4c5a9oY1xCnFNP5-AXPJhMvynVXUQvmjsGfw06GHo-K5U; expires=Thu, 26-Oct-2023 21:24:00 GMT; path=/; domain=.google.com; HttpOnly&#39;, &#39;Alt-Svc&#39;: &#39;h3=&#34;:443&#34;; ma=2592000,h3-29=&#34;:443&#34;; ma=2592000&#39;, &#39;Transfer-Encoding&#39;: &#39;chunked&#39;}
-Response text: &lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;http://schema.org/WebPage&#34; lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta content
-content-type b&#39;&lt;!doctype html&gt;&lt;html itemscope=&#34;&#34; itemtype=&#34;http://schema.org/WebPage&#34; lang=&#34;en&#34;&gt;&lt;head&gt;&lt;meta content=&#34;Search the world\&#39;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you\&#39;re looking for.&#34; name=&#34;description&#34;&gt;&lt;meta content=&#34;noodp&#34; name=&#34;robots&#34;&gt;&lt;meta content=&#34;text/html; charset=UTF-8&#34; http-equiv=&#34;Content-Type&#34;&gt;&lt;meta content=&#34;/images/branding/googleg/1x/googleg_standard_color_128dp.png&#34; itemprop=&#34;image&#34;&gt;&lt;title&gt;Google&lt;/title&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){window.google={kEI:\&#39;cJZJZKidGu_fkPIP3f6nkAE\&#39;,kEXPI:\&#39;0,1359409,6059,206,4804,2316,383,246,5,1129120,1197718,683,380090,16114,28684,22430,1362,12319,17580,4998,13228,3847,38444,2872,2891,3926,4423,3405,606,29842,30848,15324,432,3,1590,1,16916,2652,4,1528,2304,29062,13064,13659,2980,1457,16786,5827,2530,4094,7596,1,42154,2,14022,2373,342,23024,5679,1020,28950,2173,4567,6259,23418,1246,5841,14968,4332,7484,445,2,2,1,23825,801,10161,7381,2,3,15964,873,9626,10008,7,1922,9779,22893,13261,6305,2007,18191,20137,14,82,12151,4363,2890,802,109,2412,1549,4307,3785,2126,15354,3098,3030,1273,4355,482,2461,2580,4665,1804,7734,2738,1853,1032,9926,2549,7265,5780,3048,2130,44,1807,1176,1635,1090,4708,2,2147,892,1388,4759,412,5487,1444,426,865,1077,35,1073,893,71,1,2097,1189,277,2508,241,104,83,90,119,343,129,1468,242,2608,217,3,366,704,2,1030,26,889,2739,169,534,237,27,64,109,512,120,5,293,851,758,1004,4,144,4,939,738,36,49,68,587,870,90,46,209,387,1,266,301,422,78,285,203,140,14,117,255,434,194,474,2,105,2,10,39,495,124,1540,279,50,1,173,5206662,2,70,458,103,8793692,4590,3311,141,795,19735,1,303,44,5008,7,23,24,16,3,20,26,2,3,9,21,50,96,3,59,23,3,35,1,23,16,25,2,2,6,2,2,2,23944973,4042142,16262,2375,2893,6250,15739,1726,484,1412847,146987,23612965,85,94,133,336,1070,36,568,65,1,266,154,576,49,28,2,347,179,244,254,2,1317,465,810,743,709,222,735,293,727,122,187,159,74,492,35,741,147,510\&#39;,kBL:\&#39;5iQ6\&#39;,kOPI:89978449};google.sn=\&#39;webhp\&#39;;google.kHL=\&#39;en\&#39;;})();(function(){\nvar h=this||self;function l(){return void 0!==window.google&amp;&amp;void 0!==window.google.kOPI&amp;&amp;0!==window.google.kOPI?window.google.kOPI:null};var m,n=[];function p(a){for(var b;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&#34;eid&#34;)));)a=a.parentNode;return b||m}function q(a){for(var b=null;a&amp;&amp;(!a.getAttribute||!(b=a.getAttribute(&#34;leid&#34;)));)a=a.parentNode;return b}function r(a){/^http:/i.test(a)&amp;&amp;&#34;https:&#34;===window.location.protocol&amp;&amp;(google.ml&amp;&amp;google.ml(Error(&#34;a&#34;),!1,{src:a,glmm:1}),a=&#34;&#34;);return a}\nfunction t(a,b,c,d,k){var e=&#34;&#34;;-1===b.search(&#34;&amp;ei=&#34;)&amp;&amp;(e=&#34;&amp;ei=&#34;+p(d),-1===b.search(&#34;&amp;lei=&#34;)&amp;&amp;(d=q(d))&amp;&amp;(e+=&#34;&amp;lei=&#34;+d));d=&#34;&#34;;var g=-1===b.search(&#34;&amp;cshid=&#34;)&amp;&amp;&#34;slh&#34;!==a,f=[];f.push([&#34;zx&#34;,Date.now().toString()]);h._cshid&amp;&amp;g&amp;&amp;f.push([&#34;cshid&#34;,h._cshid]);c=c();null!=c&amp;&amp;f.push([&#34;opi&#34;,c.toString()]);for(c=0;c&lt;f.length;c++){if(0===c||0&lt;c)d+=&#34;&amp;&#34;;d+=f[c][0]+&#34;=&#34;+f[c][1]}return&#34;/&#34;+(k||&#34;gen_204&#34;)+&#34;?atyp=i&amp;ct=&#34;+String(a)+&#34;&amp;cad=&#34;+(b+e+d)};m=google.kEI;google.getEI=p;google.getLEI=q;google.ml=function(){return null};google.log=function(a,b,c,d,k,e){e=void 0===e?l:e;c||(c=t(a,b,e,d,k));if(c=r(c)){a=new Image;var g=n.length;n[g]=a;a.onerror=a.onload=a.onabort=function(){delete n[g]};a.src=c}};google.logUrl=function(a,b){b=void 0===b?l:b;return t(&#34;&#34;,a,b)};}).call(this);(function(){google.y={};google.sy=[];google.x=function(a,b){if(a)var c=a.id;else{do c=Math.random();while(google.y[c])}google.y[c]=[a,b];return!1};google.sx=function(a){google.sy.push(a)};google.lm=[];google.plm=function(a){google.lm.push.apply(google.lm,a)};google.lq=[];google.load=function(a,b,c){google.lq.push([[a],b,c])};google.loadAll=function(a,b){google.lq.push([a,b])};google.bx=!1;google.lx=function(){};}).call(this);google.f={};(function(){\ndocument.documentElement.addEventListener(&#34;submit&#34;,function(b){var a;if(a=b.target){var c=a.getAttribute(&#34;data-submitfalse&#34;);a=&#34;1&#34;===c||&#34;q&#34;===c&amp;&amp;!a.elements.q.value?!0:!1}else a=!1;a&amp;&amp;(b.preventDefault(),b.stopPropagation())},!0);document.documentElement.addEventListener(&#34;click&#34;,function(b){var a;a:{for(a=b.target;a&amp;&amp;a!==document.documentElement;a=a.parentElement)if(&#34;A&#34;===a.tagName){a=&#34;1&#34;===a.getAttribute(&#34;data-nohref&#34;);break a}a=!1}a&amp;&amp;b.preventDefault()},!0);}).call(this);&lt;/script&gt;&lt;style&gt;#gbar,#guser{font-size:13px;padding-top:1px !important;}#gbar{height:22px}#guser{padding-bottom:7px !important;text-align:right}.gbh,.gbd{border-top:1px solid #c9d7f1;font-size:1px}.gbh{height:0;position:absolute;top:24px;width:100%}@media all{.gb1{height:22px;margin-right:.5em;vertical-align:top}#gbar{float:left}}a.gb1,a.gb4{text-decoration:underline !important}a.gb1,a.gb4{color:#00c !important}.gbi .gb4{color:#dd8e27 !important}.gbf .gb4{color:#900 !important}\n&lt;/style&gt;&lt;style&gt;body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#1558d6}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}body{background:#fff;color:#000}a{color:#4b11a8;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#1558d6}a:visited{color:#4b11a8}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#f8f9fa;border:solid 1px;border-color:#dadce0 #70757a #70757a #dadce0;height:30px}.lsbb{display:block}#WqQANb a{display:inline-block;margin:0 12px}.lsb{background:url(/images/nav_logo229.png) 0 -261px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#dadce0}.lst:focus{outline:none}&lt;/style&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){window.google.erd={jsr:1,bv:1782,de:true};\nvar h=this||self;var k,l=null!=(k=h.mei)?k:1,n,p=null!=(n=h.sdo)?n:!0,q=0,r,t=google.erd,v=t.jsr;google.ml=function(a,b,d,m,e){e=void 0===e?2:e;b&amp;&amp;(r=a&amp;&amp;a.message);if(google.dl)return google.dl(a,e,d),null;if(0&gt;v){window.console&amp;&amp;console.error(a,d);if(-2===v)throw a;b=!1}else b=!a||!a.message||&#34;Error loading script&#34;===a.message||q&gt;=l&amp;&amp;!m?!1:!0;if(!b)return null;q++;d=d||{};b=encodeURIComponent;var c=&#34;/gen_204?atyp=i&amp;ei=&#34;+b(google.kEI);google.kEXPI&amp;&amp;(c+=&#34;&amp;jexpid=&#34;+b(google.kEXPI));c+=&#34;&amp;srcpg=&#34;+b(google.sn)+&#34;&amp;jsr=&#34;+b(t.jsr)+&#34;&amp;bver=&#34;+b(t.bv);var f=a.lineNumber;void 0!==f&amp;&amp;(c+=&#34;&amp;line=&#34;+f);var g=\na.fileName;g&amp;&amp;(0&lt;g.indexOf(&#34;-extension:/&#34;)&amp;&amp;(e=3),c+=&#34;&amp;script=&#34;+b(g),f&amp;&amp;g===window.location.href&amp;&amp;(f=document.documentElement.outerHTML.split(&#34;\\n&#34;)[f],c+=&#34;&amp;cad=&#34;+b(f?f.substring(0,300):&#34;No script found.&#34;)));c+=&#34;&amp;jsel=&#34;+e;for(var u in d)c+=&#34;&amp;&#34;,c+=b(u),c+=&#34;=&#34;,c+=b(d[u]);c=c+&#34;&amp;emsg=&#34;+b(a.name+&#34;: &#34;+a.message);c=c+&#34;&amp;jsst=&#34;+b(a.stack||&#34;N/A&#34;);12288&lt;=c.length&amp;&amp;(c=c.substr(0,12288));a=c;m||google.log(0,&#34;&#34;,a);return a};window.onerror=function(a,b,d,m,e){r!==a&amp;&amp;(a=e instanceof Error?e:Error(a),void 0===d||&#34;lineNumber&#34;in a||(a.lineNumber=d),void 0===b||&#34;fileName&#34;in a||(a.fileName=b),google.ml(a,!1,void 0,!1,&#34;SyntaxError&#34;===a.name||&#34;SyntaxError&#34;===a.message.substring(0,11)||-1!==a.message.indexOf(&#34;Script error&#34;)?3:0));r=null;p&amp;&amp;q&gt;=l&amp;&amp;(window.onerror=null)};})();&lt;/script&gt;&lt;/head&gt;&lt;body bgcolor=&#34;#fff&#34;&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){var src=\&#39;/images/nav_logo229.png\&#39;;var iesg=false;document.body.onload = function(){window.n &amp;&amp; window.n();if (document.images){new Image().src=src;}\nif (!iesg){document.f&amp;&amp;document.f.q.focus();document.gbqf&amp;&amp;document.gbqf.q.focus();}\n}\n})();&lt;/script&gt;&lt;div id=&#34;mngb&#34;&gt;&lt;div id=gbar&gt;&lt;nobr&gt;&lt;b class=gb1&gt;Search&lt;/b&gt; &lt;a class=gb1 href=&#34;https://www.google.com/imghp?hl=en&amp;tab=wi&#34;&gt;Images&lt;/a&gt; &lt;a class=gb1 href=&#34;https://maps.google.com/maps?hl=en&amp;tab=wl&#34;&gt;Maps&lt;/a&gt; &lt;a class=gb1 href=&#34;https://play.google.com/?hl=en&amp;tab=w8&#34;&gt;Play&lt;/a&gt; &lt;a class=gb1 href=&#34;https://www.youtube.com/?tab=w1&#34;&gt;YouTube&lt;/a&gt; &lt;a class=gb1 href=&#34;https://news.google.com/?tab=wn&#34;&gt;News&lt;/a&gt; &lt;a class=gb1 href=&#34;https://mail.google.com/mail/?tab=wm&#34;&gt;Gmail&lt;/a&gt; &lt;a class=gb1 href=&#34;https://drive.google.com/?tab=wo&#34;&gt;Drive&lt;/a&gt; &lt;a class=gb1 style=&#34;text-decoration:none&#34; href=&#34;https://www.google.com/intl/en/about/products?tab=wh&#34;&gt;&lt;u&gt;More&lt;/u&gt; &amp;raquo;&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div id=guser width=100%&gt;&lt;nobr&gt;&lt;span id=gbn class=gbi&gt;&lt;/span&gt;&lt;span id=gbf class=gbf&gt;&lt;/span&gt;&lt;span id=gbe&gt;&lt;/span&gt;&lt;a href=&#34;http://www.google.com/history/optout?hl=en&#34; class=gb4&gt;Web History&lt;/a&gt; | &lt;a  href=&#34;/preferences?hl=en&#34; class=gb4&gt;Settings&lt;/a&gt; | &lt;a target=_top id=gb_70 href=&#34;https://accounts.google.com/ServiceLogin?hl=en&amp;passive=true&amp;continue=https://www.google.com/&amp;ec=GAZAAQ&#34; class=gb4&gt;Sign in&lt;/a&gt;&lt;/nobr&gt;&lt;/div&gt;&lt;div class=gbh style=left:0&gt;&lt;/div&gt;&lt;div class=gbh style=right:0&gt;&lt;/div&gt;&lt;/div&gt;&lt;center&gt;&lt;br clear=&#34;all&#34; id=&#34;lgpd&#34;&gt;&lt;div id=&#34;lga&#34;&gt;&lt;img alt=&#34;Google&#34; height=&#34;92&#34; src=&#34;/images/branding/googlelogo/1x/googlelogo_white_background_color_272x92dp.png&#34; style=&#34;padding:28px 0 14px&#34; width=&#34;272&#34; id=&#34;hplogo&#34;&gt;&lt;br&gt;&lt;br&gt;&lt;/div&gt;&lt;form action=&#34;/search&#34; name=&#34;f&#34;&gt;&lt;table cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;&lt;tr valign=&#34;top&#34;&gt;&lt;td width=&#34;25%&#34;&gt;&amp;nbsp;&lt;/td&gt;&lt;td align=&#34;center&#34; nowrap=&#34;&#34;&gt;&lt;input name=&#34;ie&#34; value=&#34;ISO-8859-1&#34; type=&#34;hidden&#34;&gt;&lt;input value=&#34;en&#34; name=&#34;hl&#34; type=&#34;hidden&#34;&gt;&lt;input name=&#34;source&#34; type=&#34;hidden&#34; value=&#34;hp&#34;&gt;&lt;input name=&#34;biw&#34; type=&#34;hidden&#34;&gt;&lt;input name=&#34;bih&#34; type=&#34;hidden&#34;&gt;&lt;div class=&#34;ds&#34; style=&#34;height:32px;margin:4px 0&#34;&gt;&lt;input class=&#34;lst&#34; style=&#34;margin:0;padding:5px 8px 0 6px;vertical-align:top;color:#000&#34; autocomplete=&#34;off&#34; value=&#34;&#34; title=&#34;Google Search&#34; maxlength=&#34;2048&#34; name=&#34;q&#34; size=&#34;57&#34;&gt;&lt;/div&gt;&lt;br style=&#34;line-height:0&#34;&gt;&lt;span class=&#34;ds&#34;&gt;&lt;span class=&#34;lsbb&#34;&gt;&lt;input class=&#34;lsb&#34; value=&#34;Google Search&#34; name=&#34;btnG&#34; type=&#34;submit&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;ds&#34;&gt;&lt;span class=&#34;lsbb&#34;&gt;&lt;input class=&#34;lsb&#34; id=&#34;tsuid_1&#34; value=&#34;I\&#39;m Feeling Lucky&#34; name=&#34;btnI&#34; type=&#34;submit&#34;&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){var id=\&#39;tsuid_1\&#39;;document.getElementById(id).onclick = function(){if (this.form.q.value){this.checked = 1;if (this.form.iflsig)this.form.iflsig.disabled = false;}\nelse top.location=\&#39;/doodles/\&#39;;};})();&lt;/script&gt;&lt;input value=&#34;AOEireoAAAAAZEmkgLoYb0Sd1LgbdKaTmd8on3Knh27K&#34; name=&#34;iflsig&#34; type=&#34;hidden&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td class=&#34;fl sblc&#34; align=&#34;left&#34; nowrap=&#34;&#34; width=&#34;25%&#34;&gt;&lt;a href=&#34;/advanced_search?hl=en&amp;amp;authuser=0&#34;&gt;Advanced search&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;input id=&#34;gbv&#34; name=&#34;gbv&#34; type=&#34;hidden&#34; value=&#34;1&#34;&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){var a,b=&#34;1&#34;;if(document&amp;&amp;document.getElementById)if(&#34;undefined&#34;!=typeof XMLHttpRequest)b=&#34;2&#34;;else if(&#34;undefined&#34;!=typeof ActiveXObject){var c,d,e=[&#34;MSXML2.XMLHTTP.6.0&#34;,&#34;MSXML2.XMLHTTP.3.0&#34;,&#34;MSXML2.XMLHTTP&#34;,&#34;Microsoft.XMLHTTP&#34;];for(c=0;d=e[c++];)try{new ActiveXObject(d),b=&#34;2&#34;}catch(h){}}a=b;if(&#34;2&#34;==a&amp;&amp;-1==location.search.indexOf(&#34;&amp;gbv=2&#34;)){var f=google.gbvu,g=document.getElementById(&#34;gbv&#34;);g&amp;&amp;(g.value=a);f&amp;&amp;window.setTimeout(function(){location.href=f},0)};}).call(this);&lt;/script&gt;&lt;/form&gt;&lt;div id=&#34;gac_scont&#34;&gt;&lt;/div&gt;&lt;div style=&#34;font-size:83%;min-height:3.5em&#34;&gt;&lt;br&gt;&lt;div id=&#34;prm&#34;&gt;&lt;style&gt;.szppmdbYutt__middle-slot-promo{font-size:small;margin-bottom:32px}.szppmdbYutt__middle-slot-promo a.ZIeIlb{display:inline-block;text-decoration:none}.szppmdbYutt__middle-slot-promo img{border:none;margin-right:5px;vertical-align:middle}&lt;/style&gt;&lt;div class=&#34;szppmdbYutt__middle-slot-promo&#34; data-ved=&#34;0ahUKEwiolZTevcj-AhXvL0QIHV3_CRIQnIcBCAQ&#34;&gt;&lt;span&gt;Try flexible, secure phone plans from &lt;/span&gt;&lt;a class=&#34;NKcBbd&#34; href=&#34;https://www.google.com/url?q=https://fi.google.com/about/%3Futm_medium%3Dembedded_promo%26utm_source%3Dhpp%26utm_campaign%3Dfi-wireless%26utm_content%3D20230419_rebrand&amp;amp;source=hpp&amp;amp;id=19034748&amp;amp;ct=3&amp;amp;usg=AOvVaw2uB3SMFVIk-H5nXODhxUTC&amp;amp;sa=X&amp;amp;ved=0ahUKEwiolZTevcj-AhXvL0QIHV3_CRIQ8IcBCAU&#34; rel=&#34;nofollow&#34;&gt;Google Fi Wireless&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;span id=&#34;footer&#34;&gt;&lt;div style=&#34;font-size:10pt&#34;&gt;&lt;div style=&#34;margin:19px auto;text-align:center&#34; id=&#34;WqQANb&#34;&gt;&lt;a href=&#34;/intl/en/ads/&#34;&gt;Advertising&lt;/a&gt;&lt;a href=&#34;/services/&#34;&gt;Business Solutions&lt;/a&gt;&lt;a href=&#34;/intl/en/about.html&#34;&gt;About Google&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;p style=&#34;font-size:8pt;color:#70757a&#34;&gt;&amp;copy; 2023 - &lt;a href=&#34;/intl/en/policies/privacy/&#34;&gt;Privacy&lt;/a&gt; - &lt;a href=&#34;/intl/en/policies/terms/&#34;&gt;Terms&lt;/a&gt;&lt;/p&gt;&lt;/span&gt;&lt;/center&gt;&lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){window.google.cdo={height:757,width:1440};(function(){var a=window.innerWidth,b=window.innerHeight;if(!a||!b){var c=window.document,d=&#34;CSS1Compat&#34;==c.compatMode?c.documentElement:c.body;a=d.clientWidth;b=d.clientHeight}a&amp;&amp;b&amp;&amp;(a!=google.cdo.width||b!=google.cdo.height)&amp;&amp;google.log(&#34;&#34;,&#34;&#34;,&#34;/client_204?&amp;atyp=i&amp;biw=&#34;+a+&#34;&amp;bih=&#34;+b+&#34;&amp;ei=&#34;+google.kEI);}).call(this);})();&lt;/script&gt; &lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){google.xjs={ck:\&#39;xjs.hp.zL4QsZl0WMA.L.X.O\&#39;,cs:\&#39;ACT90oH5SZ3dbV4Wu0r9JCrTS7m5mu5CEQ\&#39;,excm:[]};})();&lt;/script&gt;  &lt;script nonce=&#34;toPdpM5Bmhu8ZZGHn1NdVQ&#34;&gt;(function(){var u=\&#39;/xjs/_/js/k\\x3dxjs.hp.en.3sqXkn906Q8.O/am\\x3dAAAAdAIAKACw/d\\x3d1/ed\\x3d1/rs\\x3dACT90oHd6QLbLyVoL05YGWPIhERK7osN5A/m\\x3dsb_he,d\&#39;;var amd=0;\nvar e=this||self,f=function(c){return c};var h;var n=function(c,g){this.g=g===l?c:&#34;&#34;};n.prototype.toString=function(){return this.g+&#34;&#34;};var l={};\nfunction p(){var c=u,g=function(){};google.lx=google.stvsc?g:function(){google.timers&amp;&amp;google.timers.load&amp;&amp;google.tick&amp;&amp;google.tick(&#34;load&#34;,&#34;xjsls&#34;);var a=document;var b=&#34;SCRIPT&#34;;&#34;application/xhtml+xml&#34;===a.contentType&amp;&amp;(b=b.toLowerCase());b=a.createElement(b);a=null===c?&#34;null&#34;:void 0===c?&#34;undefined&#34;:c;if(void 0===h){var d=null;var m=e.trustedTypes;if(m&amp;&amp;m.createPolicy){try{d=m.createPolicy(&#34;goog#html&#34;,{createHTML:f,createScript:f,createScriptURL:f})}catch(r){e.console&amp;&amp;e.console.error(r.message)}h=\nd}else h=d}a=(d=h)?d.createScriptURL(a):a;a=new n(a,l);b.src=a instanceof n&amp;&amp;a.constructor===n?a.g:&#34;type_error:TrustedResourceUrl&#34;;var k,q;(k=(a=null==(q=(k=(b.ownerDocument&amp;&amp;b.ownerDocument.defaultView||window).document).querySelector)?void 0:q.call(k,&#34;script[nonce]&#34;))?a.nonce||a.getAttribute(&#34;nonce&#34;)||&#34;&#34;:&#34;&#34;)&amp;&amp;b.setAttribute(&#34;nonce&#34;,k);document.body.appendChild(b);google.psa=!0;google.lx=g};google.bx||google.lx()};google.xjsu=u;e._F_jsUrl=u;setTimeout(function(){0&lt;amd?google.caft(function(){return p()},amd):p()},0);})();window._ = window._ || {};window._DumpException = _._DumpException = function(e){throw e;};window._s = window._s || {};_s._DumpException = _._DumpException;window._qs = window._qs || {};_qs._DumpException = _._DumpException;function _F_installCss(c){}\n(function(){google.jl={blt:\&#39;none\&#39;,chnk:0,dw:false,dwu:true,emtn:0,end:0,ico:false,ikb:0,ine:false,injs:\&#39;none\&#39;,injt:0,injth:0,injv2:false,lls:\&#39;default\&#39;,pdt:0,rep:0,snet:true,strt:0,ubm:false,uwp:true};})();(function(){var pmc=\&#39;{\\x22d\\x22:{},\\x22sb_he\\x22:{\\x22agen\\x22:true,\\x22cgen\\x22:true,\\x22client\\x22:\\x22heirloom-hp\\x22,\\x22dh\\x22:true,\\x22ds\\x22:\\x22\\x22,\\x22fl\\x22:true,\\x22host\\x22:\\x22google.com\\x22,\\x22jsonp\\x22:true,\\x22msgs\\x22:{\\x22cibl\\x22:\\x22Clear Search\\x22,\\x22dym\\x22:\\x22Did you mean:\\x22,\\x22lcky\\x22:\\x22I\\\\u0026#39;m Feeling Lucky\\x22,\\x22lml\\x22:\\x22Learn more\\x22,\\x22psrc\\x22:\\x22This search was removed from your \\\\u003Ca href\\x3d\\\\\\x22/history\\\\\\x22\\\\u003EWeb History\\\\u003C/a\\\\u003E\\x22,\\x22psrl\\x22:\\x22Remove\\x22,\\x22sbit\\x22:\\x22Search by image\\x22,\\x22srch\\x22:\\x22Google Search\\x22},\\x22ovr\\x22:{},\\x22pq\\x22:\\x22\\x22,\\x22rfs\\x22:[],\\x22sbas\\x22:\\x220 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08)\\x22,\\x22stok\\x22:\\x22eXdUPIHZPCfh2q1YTks_Pcd2H9Q\\x22}}\&#39;;google.pmc=JSON.parse(pmc);})();&lt;/script&gt;       &lt;/body&gt;&lt;/html&gt;&#39;
+Headers: {&#39;Server&#39;: &#39;nq_website_nonmember-prod-release f3a1d150-c793-4a6b-976d-a5203ca41de1&#39;, &#39;x-frame-options&#39;: &#39;DENY&#39;, &#39;content-type&#39;: &#39;text/html; charset=utf-8&#39;, &#39;cache-control&#39;: &#39;no-cache, no-store, must-revalidate&#39;, &#39;pragma&#39;: &#39;no-cache&#39;, &#39;expires&#39;: &#39;0&#39;, &#39;x-robots-tag&#39;: &#39;index&#39;, &#39;date&#39;: &#39;Fri, 28 Apr 2023 05:41:10 GMT&#39;, &#39;x-envoy-upstream-service-time&#39;: &#39;238&#39;, &#39;x-b3-traceid&#39;: &#39;fd4a6eb933a7d142&#39;, &#39;x-request-id&#39;: &#39;062f4b5e-bf2c-4503-98d8-787bb3f95b61&#39;, &#39;x-envoy-decorator-operation&#39;: &#39;lo_svc&#39;, &#39;x-http2-stream-id&#39;: &#39;3&#39;, &#39;Via&#39;: &#39;1.1 i-0cd615408cc3bb80c (us-west-2)&#39;, &#39;X-Xss-Protection&#39;: &#39;1; mode=block; report=https://www.netflix.com/ichnaea/log/freeform/xssreport&#39;, &#39;X-Content-Type-Options&#39;: &#39;nosniff&#39;, &#39;Strict-Transport-Security&#39;: &#39;max-age=31536000; includeSubDomains&#39;, &#39;X-Originating-URL&#39;: &#39;http://www.netflix.com/&#39;, &#39;Set-Cookie&#39;: &#39;flwssn=2130259a-4a92-4556-bcfc-833e3f4cf445; Max-Age=10800; Domain=.netflix.com; Path=/, nfvdid=BQFmAAEBEOuqX5XH3MuI1OEMx3fBznlAqyZx0aO1kU1-xqy7G1EB9H2GFIAtVSaVJIGxWV3MntdW8dZwnM0yPKJKHTX-tIZS8uDfCB85J6nsTk3-cWSDPg%3D%3D; Domain=.netflix.com; Path=/; Max-Age=31536000, SecureNetflixId=v%3D2%26mac%3DAQEAEQABABQnyQDHR-2y5jaxxPiEeHdYFN81lr2AekI.%26dt%3D1682660470720; Domain=.netflix.com; Expires=Sat, 27 Apr 2024 05:41:10 GMT; Path=/; HttpOnly; Secure; SameSite=Strict, NetflixId=v%3D2%26ct%3DBQAOAAEBEPX35tdrSn4h4TWrhXVzEk6BAMaxv5Et2St2hesB0g9lXvlsdkHFZivOpydRUHgVtI2OqFU7gDUfl7Ybs_JQiz06u-B-0i-8H9TxpHIU3m27e2C0R2GHCPe6hhj_PQRB6k_RQsSpADDsEOPgyZkKEJOGply0EdL5BUi00k8LqGteSn8yovAgYUNOMXtJRl2E7Wji6XWb-qtplO_fAcmTGPIBPD_tkj9A8n0ViJrHPE55q6ipXmXAMM6ukP_FilmLNaYLZnV5exYc9MmYaPhPrMt6liPxBVazsGBrI9cYtlxUSRvHgbwMZ5XIOGSHzd3j8WBzsw0JiES4fGh5TL2lbDePv-lIfqn6fDS5fcGPnT6ht54.%26bt%3Ddev%26mac%3DAQEAEAABABSJecyVDTL27zhZ0TUZwP1iVtNa3lFgZCc.; Domain=.netflix.com; Expires=Sat, 27 Apr 2024 05:41:10 GMT; Path=/; HttpOnly; Secure; SameSite=Lax&#39;, &#39;X-Netflix.nfstatus&#39;: &#39;1_1&#39;, &#39;X-Netflix.proxy.execution-time&#39;: &#39;302&#39;, &#39;X-Netflix.zuul.netty.content.compressor.target&#39;: &#39;gzip&#39;, &#39;content-encoding&#39;: &#39;gzip&#39;, &#39;transfer-encoding&#39;: &#39;chunked&#39;}
+Response text: &lt;!doctype html&gt;&lt;html lang=&#34;en&#34; class=&#34; &#34;&gt;&lt;head&gt;&lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; c
 </pre>
 </div>
 </div>
@@ -290,8 +288,19 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 </pre></div>
 <h2 id="Check-In">Check In<a class="anchor-link" href="#Check-In"> </a></h2><ol>
 <li>Research 1 HTTP header and describe, in detail, its purpose.</li>
+</ol>
+<ul>
+<li>Request headers contain details of the client requesting the resource.</li>
+</ul>
+<ol>
 <li>Write a line in a sample NGINX configuration that will add that specific header to the <code>/information</code> location</li>
-<li>Explain the purpose of the load balancing performed by NGINX</li>
+</ol>
+<ul>
+<li>Sorry, I don't know how to do this..</li>
+</ul>
+<ol>
+<li>Explain the purpose of the load balancing performed by NGINX
+Distribute incoming network traffic among multiple servers to increase application availability</li>
 <li>Modify the following code block to obtain the value of the secret header on <code>/products</code> of the AWS site</li>
 </ol>
 
@@ -305,14 +314,35 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
-
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">aws</span> <span class="o">=</span> <span class="s2">&quot;3.130.255.192&quot;</span>
+<span class="c1"># send the GET requests to URL</span>
+<span class="c1"># use get() to retrieve the value.</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://&quot;</span> <span class="o">+</span> <span class="n">aws</span><span class="o">+</span> <span class="s2">&quot;/products&quot;</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="s2">&quot;...&quot;</span><span class="p">)</span>
+<span class="n">secret_header</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;X-Secret-Header&#39;</span><span class="p">)</span>
+<span class="c1"># If the header is present in the response, its value will be printed to the console. </span>
+<span class="c1"># If the header is not present in the response, a message indicating so will be printed.</span>
+<span class="k">if</span> <span class="n">secret_header</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is:&quot;</span><span class="p">,</span> <span class="n">secret_header</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The secret header is not present in the response headers&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The secret header is not present in the response headers
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -324,6 +354,7 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 <h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><ul>
 <li>Complete the above check-in questions and change the hosts (0.1)</li>
 <li>Complete the above code-segment to retrieve the secret header (0.1)</li>
+<li>sorry I can't find the secret header.</li>
 </ul>
 <h2 id="Bonus-(0.05)">Bonus (0.05)<a class="anchor-link" href="#Bonus-(0.05)"> </a></h2><p>Create a diagram showing the layers of abstraction that allow us to use HTTP (IP, TCP, etc.)</p>
 
@@ -339,32 +370,53 @@ No access is available to NON-Managed Sites.&lt;br&gt;&lt;br&gt;
 <li>It stands for Cross-origin Resource Sharing. It allows the server to indicate any origin (domain, scheme or port) other than itself, from which the browser should allow resources to be loaded.</li>
 </ul>
 <ol>
-<li><p>Describe how you would be able to implement CORS into your own websites</p>
-</li>
-<li><p>Describe why you would want to implement CORS into your own websites</p>
-</li>
+<li>Describe how you would be able to implement CORS into your own websites</li>
+</ol>
+<ul>
+<li>I can use this to determine if the browser is blocking responses from front-end JavaScript code from accessing cross-origin requests.</li>
+</ul>
+<ol>
+<li>Describe why you would want to implement CORS into your own websites</li>
+</ol>
+<ul>
+<li>JavaScript can only call URLs on the same origin as where the script is running, and if CORS is used, it will be able to call APIs on different domains</li>
+</ul>
+<ol>
 <li>How could use CORS to benefit yourself in the future?</li>
 </ol>
-<p>Total: 0.2 points</p>
+<ul>
+<li>I will be able to access different schemes, different domains, different ports, although the URL being accessed is not the same as where JavaScript is running</li>
+</ul>
 <h1 id="KASM-Hacks">KASM Hacks<a class="anchor-link" href="#KASM-Hacks"> </a></h1><ol>
 <li>What is the purpose of "sudo" when running commands in terminal?</li>
+</ol>
+<ul>
+<li>Run with administrator privileges</li>
+</ul>
+<ol>
 <li>What are some commands which allow us to look at how the storage of a machine is set up as?</li>
+</ol>
+<ul>
+<li>We can use df, du commands in linux to check it.</li>
+</ul>
+<ol>
 <li>What do you think are some alternatives to running "curl -O" to get the zip file for KASM?</li>
+</ol>
+<ul>
+<li>We can use "wget" command.</li>
+</ul>
+<ol>
 <li>What kind of commands do you think the "install.sh" command has and why is it necessary to call it?</li>
+</ol>
+<ul>
+<li>It's a script command. It can be used for installing and save some time.</li>
+</ul>
+<ol>
 <li>Explain in at least 3-4 sentences how deploying KASM is related to/requires other topics talked about in the lesson and/or potential ways to add things mentioned in the lesson to this guide.</li>
 </ol>
-<p>Total: 0.2 points</p>
-<h1 id="AWS/RDS-Hacks">AWS/RDS Hacks<a class="anchor-link" href="#AWS/RDS-Hacks"> </a></h1><p>See the <a href="https://firestorm0986.github.io/SLAAT/posts/sqlite-aws/">setup post</a></p>
 <ul>
-<li>Create your own database in the EC2 I have created (ec2-database-connect)<ul>
-<li>name it with your first and last name (example: aditya-nawandhar) (0.1)</li>
-<li>Create a table using the commands on the link provided. (0.1)</li>
-<li>using commands from the link provided make columns and rows with test data (can be anything) (example: “name” and “class” are the columns with rows being something like “Aditya” and “Junior”). At least 4 test rows (0.1)</li>
-<li>additional points if the data matches CPT (Bonus: 0.05)</li>
+<li>I think it is very similar to GitHub. It is a workspace. Through docker containers, it can reduce platform resource requirements and provide a secure environment.</li>
 </ul>
-</li>
-</ul>
-<p>Total: 0.3</p>
 
 </div>
 </div>
