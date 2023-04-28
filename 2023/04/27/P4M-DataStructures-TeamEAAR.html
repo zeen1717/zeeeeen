@@ -768,6 +768,66 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;oily&quot;</span><span class="p">,</span> <span class="s2">&quot;combination&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">,</span><span class="s2">&quot;sensetive&quot;</span><span class="p">,</span> <span class="s2">&quot;neutral&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">List</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">List</span><span class="p">:</span>
+    <span class="k">while</span> <span class="nb">type</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
+        <span class="nb">type</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>oily
+combination
+dry
+sensetive
+neutral
+dry
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb Cell 30</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> type = 0
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> for type in List:
+<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     while type &lt; 5:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         print(1, type)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>         type += 1
+
+<span class="ansi-red-fg">TypeError</span>: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">my_list</span><span class="p">)</span>
 <span class="n">my_list</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
@@ -931,18 +991,14 @@ d
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb Cell 34</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         break
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>     else:
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8&#39;&gt;9&lt;/a&gt;</span>         price = float(input(&#34;Enter the price of {}: &#34;.format(item)))
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9&#39;&gt;10&lt;/a&gt;</span>         grocery_dict[item] = price
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X45sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11&#39;&gt;12&lt;/a&gt;</span> # print the grocery list and total cost
-
-<span class="ansi-red-fg">ValueError</span>: could not convert string to float: &#39;&#39;</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Your grocery list:
+- Apple: $3.0
+Total cost: $0
+Final grocery list:
+- Apple: $3.0
+Total cost: $0
+</pre>
 </div>
 </div>
 
