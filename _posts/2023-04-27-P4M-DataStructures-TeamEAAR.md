@@ -2,6 +2,7 @@
 keywords: fastai
 description: A guide to data structures such as lists, dictionaries, 2D arrays, and iteration
 title: Data Structures Guide
+toc: true  
 author: Team EAAR, Ethan Tran, Alex Kumar, Advay Shindikar, Amay Advani, Rohin Sood
 nb_path: _notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb
 layout: notebook
@@ -476,6 +477,63 @@ orange
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;oily&quot;</span><span class="p">,</span> <span class="s2">&quot;combination&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">,</span><span class="s2">&quot;sensetive&quot;</span><span class="p">,</span> <span class="s2">&quot;neutral&quot;</span><span class="p">]</span>
+<span class="c1"># print second, five, third item of a list.(accessing list)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="mi">4</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="c1"># print from second to thrid item.(slicing list)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">])</span>
+<span class="c1"># modifying list item</span>
+<span class="n">List</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;oily&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+<span class="c1"># Adding to the end</span>
+<span class="n">List</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;sensetive&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+<span class="c1">#insert to index 3</span>
+<span class="n">List</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;dry&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+<span class="c1">#removing some items</span>
+<span class="n">List</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">List</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>combination
+neutral
+dry
+[&#39;combination&#39;, &#39;dry&#39;]
+[&#39;oily&#39;, &#39;combination&#39;, &#39;dry&#39;, &#39;oily&#39;, &#39;neutral&#39;]
+[&#39;oily&#39;, &#39;combination&#39;, &#39;dry&#39;, &#39;oily&#39;, &#39;neutral&#39;, &#39;sensetive&#39;]
+[&#39;oily&#39;, &#39;combination&#39;, &#39;dry&#39;, &#39;dry&#39;, &#39;oily&#39;, &#39;neutral&#39;, &#39;sensetive&#39;]
+[&#39;oily&#39;, &#39;combination&#39;, &#39;dry&#39;, &#39;neutral&#39;, &#39;sensetive&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Iteration-(Alex)">Iteration (Alex)<a class="anchor-link" href="#Iteration-(Alex)"> </a></h2><p>What is iteration?</p>
@@ -641,10 +699,6 @@ d
 <li>Make a while loop that will print each term in the list</li>
 <li>Make a for loop that will print each term in the list</li>
 </ul>
-<p>Simulation mechanics</p>
-<ul>
-<li>In Python, pop() is a method that is used to remove and return an element from a list. The syntax for using pop() is as follows:</li>
-</ul>
 
 </div>
 </div>
@@ -656,14 +710,16 @@ d
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;oily&quot;</span><span class="p">,</span> <span class="s2">&quot;combination&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">,</span><span class="s2">&quot;sensetive&quot;</span><span class="p">,</span> <span class="s2">&quot;neutral&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">]</span>
-<span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">List</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">)</span>
-<span class="nb">type</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="nb">type</span> <span class="ow">in</span> <span class="n">List</span><span class="p">:</span>
-    <span class="k">while</span> <span class="nb">type</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">type</span><span class="p">)</span>
-        <span class="nb">type</span> <span class="o">+=</span> <span class="mi">1</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">List</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;oily&quot;</span><span class="p">,</span> <span class="s2">&quot;combination&quot;</span><span class="p">,</span> <span class="s2">&quot;dry&quot;</span><span class="p">,</span><span class="s2">&quot;sensetive&quot;</span><span class="p">,</span> <span class="s2">&quot;neutral&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using for loop to print each item:&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">List</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;-&quot;</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Using while loop to print each item:&quot;</span><span class="p">)</span>
+<span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">List</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">List</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
 </pre></div>
 
     </div>
@@ -676,30 +732,20 @@ d
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>oily
+<pre>Using for loop to print each item:
+oily
 combination
 dry
 sensetive
 neutral
+--------------------
+Using while loop to print each item:
+oily
+combination
 dry
+sensetive
+neutral
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb Cell 30</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3&#39;&gt;4&lt;/a&gt;</span> type = 0
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4&#39;&gt;5&lt;/a&gt;</span> for type in List:
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     while type &lt; 5:
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=6&#39;&gt;7&lt;/a&gt;</span>         print(1, type)
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell://wsl%2Bubuntu/home/zeen/vscode/zeeeeen/_notebooks/2023-04-27-P4M-DataStructures-TeamEAAR.ipynb#X46sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7&#39;&gt;8&lt;/a&gt;</span>         type += 1
-
-<span class="ansi-red-fg">TypeError</span>: &#39;&lt;&#39; not supported between instances of &#39;str&#39; and &#39;int&#39;</pre>
 </div>
 </div>
 
@@ -709,6 +755,16 @@ dry
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Simulation mechanics</p>
+<ul>
+<li>In Python, pop() is a method that is used to remove and return an element from a list. The syntax for using pop() is as follows:</li>
+</ul>
+
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -806,13 +862,19 @@ dry
 
 <pre><code>students = ['advay', 'amay', 'rohin', 'alex', 'ethan']</code></pre>
 <hr>
-<h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><ul>
-<li>Of the above code segments, which is a list and which is a dictionary?</li>
-<li>What is a dictionary and how is it used?</li>
-<li>What is a 2D Array?</li>
-<li>How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
+<h1 id="Check-In:">Check In:<a class="anchor-link" href="#Check-In:"> </a></h1><h4 id="Of-the-above-code-segments,-which-is-a-list-and-which-is-a-dictionary?">Of the above code segments, which is a list and which is a dictionary?<a class="anchor-link" href="#Of-the-above-code-segments,-which-is-a-list-and-which-is-a-dictionary?"> </a></h4><ul>
+<li>The "students" one is a list and "student" one is a dictionary.
+#### What is a dictionary and how is it used?</li>
+<li>Dictionary is a collection, and it is used to store data values in "key:value" pairs.
+#### What is a 2D Array?</li>
+<li>It is 2 dimensional array and it's an array within an array, it represnets a table with rows an dcolumns of data.
+#### How are 2D Arrays different from 1D Arrays or Lists and what can they be used for?</li>
+<li>2D Arrays:are implemetented by using numpy. Each element  is accessed using two indices. It's used for tables, images</li>
+<li>1D Arrays: are implemetented by using numpy. Each element  is accessed using a single index. 1D arrays are used for scientific computing, lists, and sequences, </li>
+<li>Lists:aren't implemented by using numpy. Each element  is accessed using a single index. Lists are used for general programming.
+## Manipulating Dictionaries</li>
 </ul>
-<h2 id="Manipulating-Dictionaries">Manipulating Dictionaries<a class="anchor-link" href="#Manipulating-Dictionaries"> </a></h2>
+
 </div>
 </div>
 </div>
