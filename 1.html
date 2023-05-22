@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, ial-scale=1.0">
+    <title>Login page in HTML</title>
+</head>
+<body>
+    <h1>Login page</h1>
+    <form action="">
+        <!-- Headings for the form -->
+        <div class="headingsContainer">
+            <h3>Sign in</h3>
+            <p>Please enter your information:</p>
+        </div>
+
+        <!-- Main container for all inputs -->
+        <div class="mainContainer">
+            <div class="username">
+                <!-- Username -->
+                <label for="username">Enter your username:</label>
+                <!-- Make sure to put "required" for both the input fields -->
+                <input type="text" placeholder="EX:APCSP" name="username" required>
+                <br><br>
+                <!--Password-->
+                <label for="password">Enter your password:</label>
+                <!-- Make sure to put "required" for both the input fields -->
+                <input type="text" placeholder="EX:12345" name="password" required>
+
+                <br><br>
+
+                <!-- Login button -->
+                <!--"fa-solid fa-plus" class is used for adding user-->
+                <button onclick="add()">Login<i class="fa-solid fa-plus"></i></button>
+                <!--"fa-solid fa-ban" class is used to delete user-->
+                <button onclick="del()">SignOut <i class="fa-solid fa-ban"></i></button>
+            </div>
+            <ul class="username"></ul><!--usernames go here-->
+        </div>
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>
